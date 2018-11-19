@@ -1,5 +1,5 @@
-function highlight(){
-	let navy = document.getElementById("navySeal").textContent;
+function scrambler(){
+	let navy = document.getElementById("trek").textContent;
 	let arr = navy.split(' ');
 		for(let i = 0; i < arr.length; i++) {
 			let scramble = Math.floor(Math.random() + arr.length);
