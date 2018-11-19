@@ -1,8 +1,14 @@
 function highlight(){
-	let navy = document.getElementById("navySeal");
+	let navy = document.getElementById("navySeal").textContent;
 	let arr = navy.split(' ');
-	arr.map
-
+		for(let i = 0; i < arr.length; i++) {
+			let scramble = Math.floor(Math.random() + arr.length);
+			let newArr = arr[i];
+			arr[i] = arr[scramble];
+			arr[scramble] = newArr;
+		}
+	arr=arr.join(" ");
+		document.getElementById("scrambled").textContent = arr
 }
 
 function smurfify() {
